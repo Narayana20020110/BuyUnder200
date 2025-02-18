@@ -23,4 +23,4 @@ class Customer(models.Model):
     delivery = models.BooleanField(default=False)
     size  = models.CharField(max_length=1,choices=sizes,default='M')
     def __str__(self):
-        return f"{self.name} - {self.product.name}"
+        return f"{self.name} - {self.product.id}"
