@@ -5,7 +5,7 @@ from .models import Product, Customer
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'price')
     search_fields = ('name',)
-
+    enctype = "multipart/form-data"
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'mobile', 'product', 'delivery')
@@ -16,3 +16,6 @@ class CustomerAdmin(admin.ModelAdmin):
     @admin.action(description="Mark selected orders as delivered")
     def mark_as_delivered(self, request, queryset):
         queryset.update(delivery=True)
+
+
+    
