@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-c)cp$ax6_-ge=(=+ueol6ka0rk&ywgzawhd%xxap*jf@&iz40g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['buyunder200.onrender.com','localhost','127.0.0.1']
 
@@ -135,19 +135,19 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-#import cloudinary
+import cloudinary
 #import cloudinary_storage
 
 # Cloudinary configuration
-'''cloudinary.config(
+cloudinary.config(
     cloud_name ='ddd0kv858',
     api_key = '529422577539926',
     api_secret ='LWS1dEQiLt1WYbcSpWajhIR1V6U',
-)'''
-CLOUDINARY_STORAGE ={
+)
+'''CLOUDINARY_STORAGE ={
     'CLOUD_NAME':'ddd0kv858',
     'API_KEY':'529422577539926',
     'API_SECRET':'LWS1dEQiLt1WYbcSpWajhIR1V6U'
-}
+}'''
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_URL = 'https://res.cloudinary.com/ddd0kv858/'
