@@ -5,7 +5,7 @@ from .models import Product, Customer
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'price')
     search_fields = ('name',)
-    enctype = "multipart/form-data"
+    fields=('name','image','price')
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'mobile', 'product', 'delivery')
