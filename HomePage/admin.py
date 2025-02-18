@@ -7,7 +7,7 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'mobile', 'product', 'delivery')
+    list_display = ('id', 'name', 'mobile', 'product','size', 'delivery',)
     list_filter = ('delivery',)
     search_fields = ('name', 'mobile', 'product__name')
     actions = ['mark_as_delivered']
