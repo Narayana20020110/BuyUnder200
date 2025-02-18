@@ -150,4 +150,4 @@ cloudinary.config(
     'API_SECRET':'LWS1dEQiLt1WYbcSpWajhIR1V6U'
 }'''
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-MEDIA_URL = 'https://res.cloudinary.com/ddd0kv858/'
+MEDIA_URL = 'media/'
