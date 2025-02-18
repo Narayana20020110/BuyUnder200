@@ -135,14 +135,19 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-import cloudinary
-import cloudinary_storage
+#import cloudinary
+#import cloudinary_storage
 
 # Cloudinary configuration
-cloudinary.config(
+'''cloudinary.config(
     cloud_name ='ddd0kv858',
     api_key = '529422577539926',
     api_secret ='LWS1dEQiLt1WYbcSpWajhIR1V6U',
-)
+)'''
+CLOUDINARY_STORAGE ={
+    'CLOUD_NAME':'ddd0kv858',
+    'API_KEY':'529422577539926',
+    'API_SECRET':'LWS1dEQiLt1WYbcSpWajhIR1V6U'
+}
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_URL = 'https://res.cloudinary.com/ddd0kv858/'
