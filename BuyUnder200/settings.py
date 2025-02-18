@@ -136,7 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 import cloudinary
-
+import cloudinary_storage
 
 # Cloudinary configuration
 cloudinary.config(
